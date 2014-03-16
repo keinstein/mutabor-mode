@@ -37,7 +37,7 @@
 (defconst mutabor-font-lock-keywords-1
   (list
    ;;   '("\\<\\(A\\(CTIVITY\\|PPLICATION\\)\\|DATA\\|END_\\(A\\(CTIVITY\\|PPLICATION\\)\\|DATA\\|MODEL\\|PARTICIPANT\\|T\\(OOL_LIST\\|RANSITION\\)\\|WORKFLOW\\)\\|MODEL\\|PARTICIPANT\\|T\\(OOL_LIST\\|RANSITION\\)\\|WORKFLOW\\)\\>" . font-lock-builtin-face)
-   '("\\<\\(INTERVALL?\\|TONE?\\(SYSTEM\\)?\\|UMSTIMMUNG\\|RETUNING\\|HARMON\\(Y\\|IE\\)\\|MIDIKANAL\\|INSTRUMENT\\)\\>" . font-lock-builtin-face)
+   '("\\<\\(INTERVALL?\\|TONE?\\(SYSTEM\\)?\\|UMSTIMMUNG\\|RETUNING\\|HARMON\\(Y\\|IE\\)\\|MIDIKANAL\\|INSTRUMENT\\|LOGI\\(C\\|K\\)\\)\\>" . font-lock-builtin-face)
    '("\\('\\w*'\\)" . font-lock-variable-name-face))
   "Minimal highlighting expressions for MUTABOR mode")
 
@@ -67,7 +67,7 @@
       (indent-line-to 0)
 
     (let ((not-indented t) cur-indent)
-      (if (looking-at "^[ \t]*\\(INTERVALL?\\|TONE?\\(SYSTEM\\)?\\|UMSTIMMUNG\\|RETUNING\\|HARMON\\(Y\\|IE\\)\\|MIDIKANAL\\|INSTRUMENT\\)") ; Check for rule 2
+      (if (looking-at "^[ \t]*\\(INTERVALL?\\|TONE?\\(SYSTEM\\)?\\|UMSTIMMUNG\\|RETUNING\\|HARMON\\(Y\\|IE\\)\\|MIDIKANAL\\|INSTRUMENT\\|LOGI\\(C\\|K\\)\\)") ; Check for rule 2
 ;		(setq cur-indent nil)
 	  (progn
 	    (save-excursion
